@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveBook</title>
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DriveBook</h1>
+  </header>
+
+  <div class="container">
+    <h2>Log a Drive</h2>
+    <form>
+      <label for="vehicle">Vehicle:</label>
+      <select id="vehicle" name="vehicle" required>
+        <option value="">Select a vehicle</option>
+        <option value="car">Car</option>
+        <option value="bike">Bike</option>
+      </select>
+
+      <label for="start-location">Start Location:</label>
+      <input type="text" id="start-location" name="start-location" required>
+
+      <label for="end-location">End Location:</label>
+      <input type="text" id="end-location" name="end-location" required>
+
+      <label for="distance">Distance (in km):</label>
+      <input type="text" id="distance" name="distance" required>
+
+      <label for="notes">Notes:</label>
+      <textarea id="notes" name="notes" rows="5"></textarea>
+
+      <input type="submit" value="Log Drive">
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 DriveBook. All rights reserved.</p>
+  </footer>
+</body>
+</html>
